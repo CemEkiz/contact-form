@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Contact Form</title>
+	</head>
+	<body>
+		<div class="form-wrapper">
+			<form name="contact" method="POST" data-netlify="true">
+				<fieldset class="contact-form">
+					<legend>Contact me</legend>
+					<div class="layout">
+						<p class="inp-first-name">
+							<label for="name">First name</label>
+							<input type="text" name="name" id="name" autofocus />
+						</p>
+						<p class="inp-email">
+							<label for="email">E-mail</label>
+							<input type="email" name="email" id="email" autofocus />
+						</p>
+						<p class="inp-message">
+							<label for="message">Message</label>
+							<textarea
+								name="message"
+								id="message"
+								cols="60"
+								rows="8"
+							></textarea>
+						</p>
+						<p>
+							<button type="submit">Send</button>
+						</p>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>
